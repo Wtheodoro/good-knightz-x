@@ -4,6 +4,7 @@ import InfoCard from '../../../cards/InfoCard'
 import DiscordSVG from '../../../SVGs/ProtectDiscordSections/DiscordSVG'
 import WavesSVG from '../../../SVGs/WavesSVG'
 import { Container } from './styles'
+import { IoLogoTwitter } from 'react-icons/io'
 
 const FooterNew = () => {
   return (
@@ -23,6 +24,12 @@ const FooterNew = () => {
             </div>
             Add to your server
           </InfoCard>
+          <a href='https://twitter.com/thegoodknightz' className='link'>
+            <div className='twitter-btn'>
+              <IoLogoTwitter />
+              <p>Twitter</p>
+            </div>
+          </a>
         </div>
 
         <div className='creditsTermsAndCondition'>

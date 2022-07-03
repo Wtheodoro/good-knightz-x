@@ -55,6 +55,23 @@ const Container = styled.div`
         margin-right: 10px;
       }
 
+      .twitter-btn {
+        display: flex;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+        padding: 0 20px 0 20px;
+        height: 60px;
+        background: #1da1f2;
+        border-radius: 12px;
+        font-weight: bold;
+        margin-left: 44px;
+
+        svg {
+          margin-right: 10px;
+        }
+      }
+
       > * {
         &:nth-child(1) {
           display: flex;

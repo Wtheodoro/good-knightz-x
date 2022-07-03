@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: min(1170px, 90%);
@@ -17,11 +17,15 @@ export const Container = styled.div`
     width: 95%;
   }
 
-  .question{
+  .question {
     max-width: 78%;
   }
 
   .toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -30,26 +34,6 @@ export const Container = styled.div`
     top: 21px;
     right: 20px;
     transition: all 0.3s ease;
-    transform: rotate(${props => props.isOpen ? '135deg' : '0deg'});
-
-    .vertical {
-      width: 4px;
-      height: 35px;
-      border-radius: 12px;
-      background: var(--black);
-      position: absolute;
-      top: 5px;
-      left: 21px;
-    }
-
-    .horizontal {
-      width: 35px;
-      height: 4px;
-      border-radius: 12px;
-      background: var(--black);
-      position: absolute;
-      top: 21px;
-      left: 5px;
-    }
+    transform: rotate(${(props) => (props.isOpen ? '135deg' : '0deg')});
   }
 `
