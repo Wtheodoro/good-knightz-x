@@ -49,7 +49,7 @@ const FooterNew = () => {
           <p>© Rarefied Studios, LLC</p>
           <div className='supportContainer'>
             <Link to='/privacy'>
-              <p>SUPPORT</p>
+              <p>Privacy Policy</p>
             </Link>
             <Link to='/terms'>
               <p>Terms of Service </p>

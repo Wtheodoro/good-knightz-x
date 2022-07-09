@@ -26,6 +26,7 @@ export default createGlobalStyle`
   }
   html, body #root {
     height: 100%;
+    background-color: #251b33;
   }
   body {
     font-family: 'Noto Sans JP', sans-serif;

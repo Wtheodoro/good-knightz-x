@@ -5,11 +5,11 @@ import { Container } from './styles'
 const TermsHeader = () => {
   return (
     <Container>
-      <Link to="/">
-        <img src='/images/backArrow.png'/>
+      <Link to='/discord'>
+        <img src='/images/backArrow.png' />
       </Link>
 
-      <img src="images/Logo_purple.png" alt="Good knightz logo"/>
+      <img src='images/Logo_purple.png' alt='Good knightz logo' />
     </Container>
   )
 }
