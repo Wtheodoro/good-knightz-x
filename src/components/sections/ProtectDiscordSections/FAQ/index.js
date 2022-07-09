@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Container } from './styles'
-import { Title } from "../../../Title/styles"
+import { Title } from '../../../Title/styles'
 import Stardust5SVG from '../../../SVGs/ProtectDiscordSections/Stardust5SVG'
 import Waves2SVG from '../../../SVGs/ProtectDiscordSections/Waves2SVG'
 import Rock2SVG from '../../../SVGs/ProtectDiscordSections/Rock2SVG'
@@ -13,94 +13,100 @@ import Rock3SVG from '../../../SVGs/ProtectDiscordSections/Rock3SVG'
 import Waves3SVG from '../../../SVGs/ProtectDiscordSections/Waves3SVG'
 
 const SectionFAQ = () => {
-
   const [scale, setScale] = useState(1)
 
-  const size = useWindowSize();
+  const size = useWindowSize()
 
   useEffect(() => {
-      // 1920px is the default width of the figma design
-      // Need to recalculate the scale to fit the screen
-      setScale(size.width / 1920)
+    // 1920px is the default width of the figma design
+    // Need to recalculate the scale to fit the screen
+    setScale(size.width / 1920)
   }, [size])
 
   return (
     <Container>
-        <h1>FAQ</h1>
-        <div className='faqCardsWrapper'>
-          <FaqCard
-            question="How does the Good Knight stop fake mint attacks?"
-            answer="The bot’s innovative anti-link technology shields projects by automatically deleting any link that your server hasn't registered with the Good Knight! Even if a mod's account is compromised, attackers can't post their scam links without the mod's Good Knight password. Sir Prize scammers!"
-            secondarycolor
-          />
+      <h1>FAQ</h1>
+      <div className='faqCardsWrapper'>
+        <FaqCard
+          question='What features does Good Knight provide?'
+          answer={
+            <ul className='faq-list'>
+              <li>In-server password protection</li>
+              <li>Anti-link and link whitelisting</li>
+              <li>Anti-webhook</li>
+              <li>Password protected server lockdown</li>
+              <li>Shielded mass mentions</li>
+              <li>Protection against compromised bots</li>
+              <li>Locked mod commands</li>
+            </ul>
+          }
+          secondarycolor
+        />
 
-          <FaqCard
-            question="Wait, Good Knight is going to store a password? Is it secure?"
-            answer="Passwords are converted using the bcrypt library to salt and one-way hash passwords. These encrypted passwords are stored in a remote database. When a mod enters their password, this process is repeated to check the result against the stored encrypted password.Here's how it worksIn total xxxx NFTs."
-            secondarycolor
-          />
+        <FaqCard
+          question='How much does Good Knight cost?'
+          answer='It’s FREE! And the Good Knight team has pledged to always provide the necessary security features for free.'
+          secondarycolor
+        />
 
-          <FaqCard
-            question="What happens if the Good Knight database is compromised?"
-            answer="All passwords are encrypted and uncrackable. Even if our database is compromised, the hackers only end up with a stack of useless strings"
-            secondarycolor
-          />
+        <FaqCard
+          question='I have <insert your favorite bot> (AutoMod, Dyno, MEE6, Wick, Beemo, etc.), why do I need Good Knight? '
+          answer='All of the existing Discord bots attempt to prevent hacks, scams, raids, etc. before they happen but are useless against a hacker that has already compromised an account. Good Knight’s primary use, as layer-2 security, is to defend your server in this worst-case scenario!'
+          secondarycolor
+        />
 
-          <FaqCard
-            question="Why is Good Knight so Draconian?"
-            answer="Attackers can easily phish admins/mods to steal their discord token and log in as them (bypassing 2FA), without you ever knowing. Until an admin/mod supplies their password, Good Knight assumes that they are compromised. This is the key difference from any other bot out there."
-            secondarycolor
-          />
+        <FaqCard
+          question='My admins/mods are careful and would never get hacked!'
+          answer='No matter how careful you are, hackers are skilled at phishing and socially engineering admins/mods into their scams. All it takes is one mistake to destroy your server and potentially lead to thousands of dollars in damages. Do you trust your admins/mods enough to take that risk?'
+          secondarycolor
+        />
 
-          <FaqCard
-            question="Why open source? You could've sold this bot!"
-            answer="We think that it's important to fight scammers in this space and make it safe for all communities. We can't expect to grow the NFT community while bad actors are stealing from new or inexperienced users. Project founders and community leaders have a responsibility to pave the way and make NFTs safe for all. Being open source allows us to tap into the huge wealth of knowledge and innovation in this space. We all deserve a gm!"
-            secondarycolor
-          />
-          <FaqCard
-            question="Do I really have to register every link? What if I want to whitelist certain sites such as Opensea?"
-            answer="Any registered global link will automatically register any other links with that basename. For example, if you register https://twitter.com/, this will register any specific twitter link for example https://twitter.com/thegoodknightz"
-            secondarycolor
-          />
-        </div>
+        <FaqCard
+          question='How does the Good Knight stop NFT scams?'
+          answer="The bot’s innovative anti-link technology shields projects by automatically deleting any link that your server hasn't registered with the Good Knight! Even if an admin or mod account is compromised, attackers can't post their malicious links without the mod's Good Knight password."
+          secondarycolor
+        />
+        <FaqCard
+          question='Wait, Good Knight is going to store a password? Is it secure?'
+          answer='Passwords are salted, encrypted, and one-way hashed to achieve the highest level of security. This means passwords are never decrypted at any time. For more information on password protection, visit the Good Knight documentation.'
+          secondarycolor
+        />
+        <FaqCard
+          question='What happens if the Good Knight database is compromised?'
+          answer='All passwords are encrypted and, since they are one-way hashed, even if the remote database was leaked they would be uncrackable. For more information on password protection, visit the Good Knight documentation'
+          secondarycolor
+        />
+      </div>
 
-        <div className='StardustContainer'>
-          <Stardust5SVG scale={scale}/>
-          <Waves2SVG scale={scale}/>
-          <Rock2SVG scale={scale}/>
-        </div>
+      <div className='StardustContainer'>
+        <Stardust5SVG scale={scale} />
+        <Waves2SVG scale={scale} />
+        <Rock2SVG scale={scale} />
+      </div>
 
-        <div className='OwlContainer'>
-          <img
-            draggable="false"
-            src="gif/Owl.gif"
-            width={109 * scale}
-            height={82 * scale}
-          />
-          <Rock1SVG
-            scale={scale}
-            width={109}
-            height={149}
-          />
-        </div>
+      <div className='OwlContainer'>
+        <img
+          draggable='false'
+          src='gif/Owl.gif'
+          width={109 * scale}
+          height={82 * scale}
+        />
+        <Rock1SVG scale={scale} width={109} height={149} />
+      </div>
 
-        <div className='RockContainer'>
-          <img
-            draggable="false"
-            src="gif/Rock.gif"
-            width={94 * scale}
-            height={78 * scale}
-          />
-          <Rock3SVG
-            scale={scale}
-            width={201}
-            height={102}
-          />
-        </div>
+      <div className='RockContainer'>
+        <img
+          draggable='false'
+          src='gif/Rock.gif'
+          width={94 * scale}
+          height={78 * scale}
+        />
+        <Rock3SVG scale={scale} width={201} height={102} />
+      </div>
 
-        <div className='WaveContainer'>
-          <Waves3SVG scale={scale}/>
-        </div>
+      <div className='WaveContainer'>
+        <Waves3SVG scale={scale} />
+      </div>
     </Container>
   )
 }

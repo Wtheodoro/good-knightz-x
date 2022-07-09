@@ -38,7 +38,19 @@ export const Container = styled.div`
     transform: rotate(${(props) => (props.isOpen ? '135deg' : '0deg')});
   }
 
+  .faq-list {
+    margin-left: 20px;
+
+    > li + li {
+      margin-top: 10px;
+    }
+  }
+
   @media (min-width: 768px) {
     font-size: 24px;
+
+    .faq-list {
+      margin-left: 50px;
+    }
   }
 `
