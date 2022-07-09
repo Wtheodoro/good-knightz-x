@@ -16,7 +16,7 @@ const FooterNew = () => {
             href='mailto:info@rarefiedstudios.com'
             className='link contact-link'
           >
-            <div>Contact Us</div>
+            <div className='contact-us'>Contact Us</div>
           </a>
 
           <div

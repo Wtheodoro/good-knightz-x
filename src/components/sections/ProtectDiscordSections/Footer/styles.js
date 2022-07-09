@@ -59,6 +59,14 @@ export const Container = styled.div`
         margin-right: 10px;
       }
 
+      .contact-us {
+        font-size: 18px;
+      }
+
+      .contact-link:hover {
+        opacity: 0.7;
+      }
+
       .twitter-btn {
         display: flex;
         align-items: center;
@@ -78,15 +86,9 @@ export const Container = styled.div`
           margin-top: 50px;
         }
 
-        /* .Discord-btn {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          height: 70px;
-          background: #9948e6;
-          color: white;
-        } */
+        &:hover {
+          background: rgba(29, 161, 242, 0.7);
+        }
       }
 
       > * {
@@ -124,6 +126,10 @@ export const Container = styled.div`
 
       .creditsTermsAndCondition {
         flex-direction: row;
+      }
+
+      .contact-us {
+        font-size: 24px;
       }
     }
   }
