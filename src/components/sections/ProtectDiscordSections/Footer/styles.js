@@ -60,7 +60,7 @@ export const Container = styled.div`
       }
 
       .contact-us {
-        font-size: 18px;
+        font-size: 14px;
       }
 
       .contact-link:hover {
@@ -118,6 +118,10 @@ export const Container = styled.div`
       .buttonContainer {
         display: flex;
         flex-direction: row;
+
+        .contact-us {
+          font-size: 16px;
+        }
       }
 
       .contact-link {
@@ -126,10 +130,6 @@ export const Container = styled.div`
 
       .creditsTermsAndCondition {
         flex-direction: row;
-      }
-
-      .contact-us {
-        font-size: 24px;
       }
     }
   }
