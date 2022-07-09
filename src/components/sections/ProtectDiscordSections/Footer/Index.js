@@ -12,19 +12,32 @@ const FooterNew = () => {
       <WavesSVG />
       <div className='footer'>
         <div className='buttonContainer'>
-          <a href='mailto:info@rarefiedstudios.com' className='link'>
+          <a
+            href='mailto:info@rarefiedstudios.com'
+            className='link contact-link'
+          >
             <div>Contact Us</div>
           </a>
-          <InfoCard
-            link='https://discord.com/oauth2/authorize?client_id=957481307405975552&permissions=805792792&scope=applications.commands%20bot'
-            spotlight
+
+          <div
+            className='discord-card-wrapper'
+            style={{ margin: '20px 0 0 0' }}
           >
-            <div className='icon-wrapper'>
-              <DiscordSVG fill={'#FFF'} />
-            </div>
-            Add to your server
-          </InfoCard>
-          <a href='https://twitter.com/thegoodknightz' className='link'>
+            <InfoCard
+              link='https://discord.com/oauth2/authorize?client_id=957481307405975552&permissions=805792792&scope=applications.commands%20bot'
+              spotlight
+            >
+              <div className='icon-wrapper'>
+                <DiscordSVG fill={'#FFF'} />
+              </div>
+              Add to your server
+            </InfoCard>
+          </div>
+
+          <a
+            href='https://twitter.com/thegoodknightz'
+            className='link twitter-link'
+          >
             <div className='twitter-btn'>
               <IoLogoTwitter />
               <p>Twitter</p>

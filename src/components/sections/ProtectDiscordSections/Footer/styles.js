@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Container = styled.div`
+export const Container = styled.div`
   margin-top: 5%;
   width: 100vw;
 
@@ -18,7 +18,9 @@ const Container = styled.div`
       width: 100%;
       max-width: 1200px;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
+      align-items: center;
       color: #fff;
 
       p {
@@ -44,8 +46,10 @@ const Container = styled.div`
 
     .buttonContainer {
       display: flex;
-      margin-top: 5%;
-      margin-bottom: 5%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
 
       .link {
         text-decoration: none;
@@ -65,11 +69,24 @@ const Container = styled.div`
         background: #1da1f2;
         border-radius: 12px;
         font-weight: bold;
-        margin-left: 44px;
 
         svg {
           margin-right: 10px;
         }
+
+        .discord-card-wrapper {
+          margin-top: 50px;
+        }
+
+        /* .Discord-btn {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          height: 70px;
+          background: #9948e6;
+          color: white;
+        } */
       }
 
       > * {
@@ -82,7 +99,6 @@ const Container = styled.div`
           min-width: 150px;
           height: 60px;
           border-radius: 12px;
-          margin-right: 10%;
           font-size: max(1.5vw, 12px);
           line-height: 100%;
           font-weight: 600;
@@ -96,24 +112,19 @@ const Container = styled.div`
       }
     }
 
-    @media (max-width: 768px) {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    @media (min-width: 768px) {
+      .buttonContainer {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .contact-link {
+        margin-right: 20px;
+      }
 
       .creditsTermsAndCondition {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .supportContainer {
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+        flex-direction: row;
       }
     }
   }
 `
-
-export { Container }

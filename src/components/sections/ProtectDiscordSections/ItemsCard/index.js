@@ -45,11 +45,19 @@ const ItemsCard = ({ reference, number }) => {
     <Container draggable='false'>
       <div className='TextContainer'>
         <HomeSection />
-        <h1>
+        {/* <h1>
           The Best Protector of
           <br /> your Discord Server
+        </h1> */}
+        <h1>
+          Defend your Discord realm
+          <br /> from hackers
         </h1>
-        <h2>Community Security for Web3</h2>
+        {/* <h2>Community Security for Web3</h2> */}
+        <h2>
+          The only bot that can protect your discord server
+          <br /> after an account compromise
+        </h2>
         <InfoContainer>
           <div>
             <InfoCard onClick={antiHackerScroll}>
