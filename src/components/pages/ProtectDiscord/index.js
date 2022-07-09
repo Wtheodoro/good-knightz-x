@@ -16,14 +16,14 @@ const ProtectDiscord = () => {
   }
 
   return (
-    <Container draggable="false">
-      <ItemsCard reference={antiLink} number={changeIndice}/>
+    <Container draggable='false'>
+      <ItemsCard reference={antiLink} number={changeIndice} />
       <div ref={antiLink}>
-        <AntiLink indice={indice}/>
+        <AntiLink indice={indice} />
       </div>
-      <SectionFAQ/>
-      <TeamSection/>
-      <FooterNew/>
+      <SectionFAQ />
+      <TeamSection />
+      <FooterNew />
     </Container>
   )
 }

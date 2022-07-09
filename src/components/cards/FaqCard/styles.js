@@ -15,6 +15,7 @@ export const Container = styled.div`
     transition: all 0.3s ease;
     margin-top: 20px;
     width: 95%;
+    font-weight: 300;
   }
 
   .question {
@@ -35,5 +36,9 @@ export const Container = styled.div`
     right: 20px;
     transition: all 0.3s ease;
     transform: rotate(${(props) => (props.isOpen ? '135deg' : '0deg')});
+  }
+
+  @media (min-width: 768px) {
+    font-size: 24px;
   }
 `
