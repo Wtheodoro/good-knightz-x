@@ -33,7 +33,7 @@ const Container = styled.div`
   .TextContainer {
     justify-content: center;
     width: 45%;
-    margin-right: 5%;
+    margin: 0 5% 0 3%;
     height: 34vw;
     background-color: #3a2657;
     border-radius: 12px;

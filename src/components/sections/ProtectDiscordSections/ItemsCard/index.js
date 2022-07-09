@@ -60,12 +60,10 @@ const ItemsCard = ({ reference, number }) => {
         </h2>
         <InfoContainer>
           <div>
-            <InfoCard onClick={antiHackerScroll}>
-              Anti-hacker protection
-            </InfoCard>
+            <InfoCard onClick={antiHackerScroll}>Layer-2 Security</InfoCard>
 
             <InfoCard onClick={instantServerScroll}>
-              Instant server lockdown
+              Anti-link Technology
             </InfoCard>
 
             <InfoCard
@@ -81,10 +79,12 @@ const ItemsCard = ({ reference, number }) => {
 
           <div>
             <InfoCard onClick={automatedServerScroll}>
-              Automated server audit
+              Password Protection
             </InfoCard>
 
-            <InfoCard onClick={antiLinkScroll}>Anti-link technology</InfoCard>
+            <InfoCard onClick={antiLinkScroll}>
+              Anti-webhook and more...
+            </InfoCard>
 
             <InfoCard link='https://docs.goodknightbot.com/' spotlight>
               Documentation
@@ -92,6 +92,7 @@ const ItemsCard = ({ reference, number }) => {
           </div>
         </InfoContainer>
       </div>
+
       <div className='GMContainer'>
         <WhiteHatSVG scale={scale} />
         <RockBigSVG scale={scale} />
