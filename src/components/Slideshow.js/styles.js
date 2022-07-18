@@ -6,6 +6,7 @@ const Container = styled.div`
 
   .items {
     display: flex;
+    flex-direction: column;
     overflow-x: scroll;
     overflow-y: hidden;
 
@@ -15,6 +16,28 @@ const Container = styled.div`
 
     ::-webkit-scrollbar {
       display: none;
+    }
+  }
+
+  .each-item {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 50px 0;
+
+    img {
+      max-height: 500px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+
+      img {
+        width: 100vw;
+      }
+
+      &:nth-child(even) {
+        flex-direction: column-reverse;
+      }
     }
   }
 
